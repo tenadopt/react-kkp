@@ -11,10 +11,10 @@ function App() {
             <div>This is APP component</div>
             <div>Article 1</div>
             <Rating value={1}/>
-            <Accordion title={"Menu"}/>
+            <Accordion title={"Menu"} collapsed={true}/>
             <div>Article 2</div>
             <Rating value={4}/>
-
+            <Accordion title={"Users"} collapsed={false}/>
             <Rating value={7}/>
         </div>
     );
