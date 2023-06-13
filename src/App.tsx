@@ -8,12 +8,15 @@ function App() {
     console.log("App rendering");
     return (
         <div>
-            This is APP component
-            <Rating/>
-            <Accordion/>
+            <div>This is APP component</div>
+            <div>Article 1</div>
+            <Rating value={1}/>
+            <Accordion title={"Menu"}/>
+            <div>Article 2</div>
+            <Rating value={4}/>
+
+            <Rating value={7}/>
         </div>
     );
 }
-
-
 export default App;

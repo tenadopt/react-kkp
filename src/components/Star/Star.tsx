@@ -1,11 +1,12 @@
 import React from "react";
 
-export const Star = () => {
-    debugger
+type StarProps = {
+    selected: boolean
+}
+
+export const Star = (props: StarProps) => {
     console.log("Star is rendering");
     return (
-        <div>
-            star
-        </div>
+    props.selected === true ? <span><b>star</b></span> : <span>star</span>
     )
 }
