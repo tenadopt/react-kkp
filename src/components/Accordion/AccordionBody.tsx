@@ -1,7 +1,7 @@
 import React from "react";
 
 export const AccordionBody = () => {
-    debugger
+
     console.log("AccordionBody is rendering");
     return (
         <div>

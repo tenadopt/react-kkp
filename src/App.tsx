@@ -4,7 +4,6 @@ import {Rating} from "./components/Rating/Rating";
 import {Accordion} from "./components/Accordion/Accordion";
 
 function App() {
-    debugger
     console.log("App rendering");
     return (
         <div>
