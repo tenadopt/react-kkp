@@ -2,11 +2,16 @@ import React from "react";
 
 type StarProps = {
     selected: boolean
+    setValue: (value: number) => void
+    value: number
 }
 
 export const Star = (props: StarProps) => {
     console.log("Star is rendering");
+
     return (
-    props.selected === true ? <span><b>star</b></span> : <span>star</span>
+        <span onClick={()=>{props.setValue(props.value)}}>
+            {props.selected === true ? <b>star</b> : "star"}
+        </span>
     )
 }
