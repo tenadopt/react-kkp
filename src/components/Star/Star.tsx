@@ -3,7 +3,7 @@ import {ValueType} from "../Rating/Rating";
 
 type StarProps = {
     selected: boolean
-    onClick: (value: number) => void
+    onClick: (value: ValueType) => void
     value: ValueType
 }
 

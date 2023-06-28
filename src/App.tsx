@@ -10,21 +10,23 @@ function App() {
     console.log("App rendering");
 
     const [ratingValue, setRatingValue] = useState<ValueType>(0)
+    const [switchedOn, setSwitchedOn] = useState<boolean>(true)
+
     return (
         <div>
             <div>This is APP component</div>
             <div>Article 1</div>
-            {/*<UncontrolledRating/>*/}
+            <UncontrolledRating/>
             <UncontrolledAccordion title={"Menu"}/>
             <div>Article 2</div>
             <Rating value={ratingValue} onClick={setRatingValue}/>
             <UncontrolledAccordion title={"Menu"}/>
             <Rating value={ratingValue} onClick={()=>setRatingValue(ratingValue)}/>
-            <Onoff/>
-            <Onoff/>
-            <Onoff/>
-            <Onoff/>
-            <Onoff/>
+            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
+            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
+            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
+            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
+            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
         </div>
     );
 }

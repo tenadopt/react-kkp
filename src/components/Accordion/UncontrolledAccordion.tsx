@@ -7,7 +7,7 @@ type UncontrolledAccordionProps = {
 }
 
 export const UncontrolledAccordion = (props: UncontrolledAccordionProps) => {
-    const [collapsed, setCollapsed] = useState(false)
+    const [collapsed, setCollapsed] = useState<boolean>(false)
         return (
             <div>
                 {props.title}
