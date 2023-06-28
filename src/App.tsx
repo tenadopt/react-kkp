@@ -5,6 +5,7 @@ import {Accordion} from "./components/Accordion/Accordion";
 import {Onoff} from "./components/Onoff/Onoff";
 import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
+import {UncontrolledOnoff} from "./components/UncontrolledOnoff/UncontrolledOnoff";
 
 function App() {
     console.log("App rendering");
@@ -22,11 +23,9 @@ function App() {
             <Rating value={ratingValue} onClick={setRatingValue}/>
             <UncontrolledAccordion title={"Menu"}/>
             <Rating value={ratingValue} onClick={()=>setRatingValue(ratingValue)}/>
-            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
-            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
-            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
-            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
-            <Onoff switched={switchedOn} onChange={setSwitchedOn}/>
+            {/*<Onoff switched={switchedOn} onChange={setSwitchedOn}/>*/}
+            <UncontrolledOnoff onChange={setSwitchedOn}/>
+            <>{switchedOn.toString()}</>
         </div>
     );
 }

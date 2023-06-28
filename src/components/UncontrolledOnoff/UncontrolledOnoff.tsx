@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 
-export const UncontrolledOnoff = () => {
+type UncontrolledOnoffType = {
+    onChange: (switched: boolean) => void
+}
 
+export const UncontrolledOnoff = (props: UncontrolledOnoffType) => {
     const [switched, setSwitched]=useState(false)
-
     const onStyle = {
         backgroundColor: switched ? "green" : "white"
     }
@@ -17,10 +19,18 @@ export const UncontrolledOnoff = () => {
         border: "1px solid black",
         backgroundColor: switched ? "green" : "red"
     }
+    const onClickOn = () => {
+        setSwitched(true)
+            props.onChange(true)
+    }
+    const onClickOff = () => {
+        setSwitched(false)
+        props.onChange(false)
+    }
     return (
         <div>
-            <button style={onStyle} onClick={()=>{setSwitched(true)}}>ON</button>
-            <button style={offStyle} onClick={()=>{setSwitched(false)}}>OFF</button>
+            <button style={onStyle} onClick={onClickOn}>ON</button>
+            <button style={offStyle} onClick={onClickOff}>OFF</button>
             <button  style={lightStyle}></button>
         </div>
     );
