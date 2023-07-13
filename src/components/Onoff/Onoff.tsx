@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 
-type OnoffType = {
+export type OnoffType = {
     switched: boolean
-    onChange: (switched: boolean)=> void
+    onChange: (switched: boolean) => void
 }
 
 export const Onoff = (props: OnoffType) => {

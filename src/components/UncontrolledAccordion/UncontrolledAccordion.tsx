@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {AccordionTitle} from "./AccordionTitle";
-import {AccordionBody} from "./AccordionBody";
+import {AccordionTitle} from "../Accordion/AccordionTitle";
+import {AccordionBody} from "../Accordion/AccordionBody";
 
 type UncontrolledAccordionProps = {
     title: string

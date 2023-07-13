@@ -3,8 +3,8 @@ import './App.css';
 import {Rating, ValueType} from "./components/Rating/Rating";
 import {Accordion} from "./components/Accordion/Accordion";
 import {Onoff} from "./components/Onoff/Onoff";
-import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
-import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {UncontrolledOnoff} from "./components/UncontrolledOnoff/UncontrolledOnoff";
 
 function App() {

@@ -16,7 +16,7 @@ export const Rating = (props: RatingPropsType) => {
         props.onClick(value)
     }
     return <>
-        <Star selected={props.value > 0} value={1} onClick={() => handleClick(1)}/>
+        <Star selected={props.value > 0} value={1} onClick={() => props.onClick(1)}/>
         <Star selected={props.value > 1} value={2} onClick={() => handleClick(2)}/>
         <Star selected={props.value > 2} value={3} onClick={() => handleClick(3)}/>
         <Star selected={props.value > 3} value={4} onClick={() => handleClick(4)}/>

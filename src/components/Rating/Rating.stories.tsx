@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import {Rating, RatingPropsType, ValueType} from './Rating';
 import React, {ComponentProps, useState} from "react";
 
